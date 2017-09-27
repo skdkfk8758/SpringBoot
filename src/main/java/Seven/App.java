@@ -14,7 +14,7 @@ public class App
 
     String home() {
 
-        String banner = "Riot_Practice " + "\n" "Team is Seven \n" + " "  + "ComputerScience" + " by " + " [김동현, 이승재, 권연욱, 김은경] ";
+        String banner = "Riot_Practice " + "\n" + "Team is Seven \n" + " "  + "ComputerScience" + " by " + " [김동현, 이승재, 권연욱, 김은경] ";
 
 
 
