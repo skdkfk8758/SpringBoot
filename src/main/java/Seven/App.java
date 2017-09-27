@@ -19,7 +19,7 @@ public class App {
         String banner = "Team Name is Seven \n Computer Science \n Member : 권연욱, 김동현, 김은경, 이승재";
 
 
-        return "Server is " + message + "  " + banner;
+        return "Server is " + message + " \n\n " + banner;
     }
 
     public static void main(String[] args) throws Exception {
