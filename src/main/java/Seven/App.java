@@ -5,28 +5,20 @@ import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
 import org.springframework.stereotype.*;
 import org.springframework.web.bind.annotation.*;
- 
- 
+
 @Controller
 @EnableAutoConfiguration
+public class App {
+    @Value("${environment.message}")
+    private String message;
 
-public class App
-{
     @RequestMapping("/")
     @ResponseBody
     String home() {
-
-        String banner = "Riot_Practice " + "\n" + "Team is Seven \n" + " "  + "ComputerScience" + " by " + " [김동현, 이승재, 권연욱, 김은경] ";
-
-
-
-        return banner;
+        return "Hello World! This is gggggggg" + message ;
     }
 
-
-    public static void main( String[] args )
-            throws Exception
-    {
+    public static void main(String[] args) throws Exception {
         SpringApplication.run(App.class, args);
     }
 }
