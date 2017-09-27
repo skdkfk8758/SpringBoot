@@ -15,7 +15,11 @@ public class App {
     @RequestMapping("/")
     @ResponseBody
     String home() {
-        return "Hello World! This is gggggggg" + message ;
+
+        String banner = "Team Name is Seven \n Computer Science \n Member : 권연욱, 김동현, 김은경, 이승재";
+
+
+        return "Server is " + message + "  " + banner;
     }
 
     public static void main(String[] args) throws Exception {
