@@ -11,21 +11,21 @@ public class App
 {
     @Controller
     @EnableAutoConfiguration
-    public class SampleController {
-        @Value("${environment.message}")
-        private String message;
 
-        @RequestMapping("/")
-        @ResponseBody
-        String home() {
-            return "Seven " + " "  + "ComputerScience" + " " + " [김동현, 이승재, 권연욱, 김은경] ";
-        }
+    String home() {
+
+        String banner = "Riot_Practice " + "\n" "Team is Seven \n" + " "  + "ComputerScience" + " by " + " [김동현, 이승재, 권연욱, 김은경] "
+
+
+
+        return ;
+    }
 
 
     public static void main( String[] args )
             throws Exception
     {
-        SpringApplication.run(SampleController.class, args);
+        SpringApplication.run(App.class, args);
     }
 
     }
